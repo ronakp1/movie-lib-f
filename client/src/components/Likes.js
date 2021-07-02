@@ -4,7 +4,7 @@ const Likes = () => {
     return (
         <div>
             <button type="button">Like</button>
-            <p></p>
+        
             <button type="button">DisLike</button>
             
         </div>
