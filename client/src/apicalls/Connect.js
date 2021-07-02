@@ -44,8 +44,8 @@ const discoverLookup = {
 // }
 
 const getDiscoverCategories = async (filter, pageNumber) => {
-    let response = await fetch(`/discover/${filter}`);
-    response = await fetch(`/discover/${filter}?page=${pageNumber}`);
+    let response = await fetch(`/api/discover/${filter}`);
+    response = await fetch(`/api/discover/${filter}?page=${pageNumber}`);
     const data = await response.json();
 
     // console.log("server22", data);

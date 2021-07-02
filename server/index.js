@@ -41,7 +41,7 @@ const genreController = require('./Controllers/GenreController');
 const { response } = require('express');
 
 
-app.get(['/discover/:id', '/discover/:id?page=pageNumb'], discoverController.getDiscover);
+app.get(['/api/discover/:id', '/api/discover/:id?page=pageNumb'], discoverController.getDiscover);
 app.get(['/movie/:id', '/movie/:id?page=pageNumber'], movieController.getMovie);
 app.get(['/search/:id', '/search/:id?page=pageNumber'], searchController.getSearch);
 app.get(['/person/:id', '/person/:id?page=pageNumber'], personController.getPerson);
