@@ -46,7 +46,7 @@ const register = async (user) => {
 
 const isAuth = async () => {
     const res = await fetch('/api/authenticated');
-    if (res.status !== 401 || res.status !== 431) {
+    if (res.status !== 401) {
         return await res.json();
         
     } else {
