@@ -1,0 +1,50 @@
+.containerHold {
+    height:100%;
+    width:100%;
+    height:70vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:white;
+}
+
+.container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(46, 64, 87, 1);
+    padding:2rem;
+    border-radius:2rem;
+
+}
+
+.container > * {
+    font-size:2rem;
+}
+
+.container button {
+    text-align: center;
+    padding:1rem;
+}
+
+.container button:focus {
+    border-radius: 2rem;
+    /* width: 50%; */
+    padding: 1.4rem;
+    font-size: 1.4rem;
+    background-color: rgb(61, 89, 126);
+    color: white;
+    width: 25rem;
+    border-color:white;
+    /* border:none; */
+    border:solid .1rem white;
+    outline:none;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+
+.message {
+    font-size:2rem;
+}

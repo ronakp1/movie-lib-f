@@ -1,0 +1,19 @@
+.selectFilter {
+    margin-left: 10rem;
+    margin-top: 1rem;
+    width:90%;
+    height:4rem;
+    border: 1px solid rgba(46, 64, 87, 1);
+    border-radius:1rem;
+}
+.selectFilter:focus {
+    border: 1px solid rgba(46, 64, 87, 1);
+}
+
+.selectFilter option {
+
+}
+
+.selectFilter option:hover {
+    background-color:rgba(46, 64, 87, 1);
+}

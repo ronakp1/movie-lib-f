@@ -1,0 +1,28 @@
+.swiper-container {
+    width: 70rem !important;
+    margin:0;
+    max-width:100%;
+}
+
+.swiper-slide {
+    width: 20% !important;
+}
+
+.swiper-slide a p {
+    font-weight:600;
+}
+
+.swiper-button-prev {
+    color: rgb(61, 89, 126, 0.6);
+}
+
+.swiper-button-next {
+    color: rgb(61, 89, 126, 1);
+}
+
+
+@media only screen and (max-width: 600px) {
+    .swiper-container {
+        width: 55rem !important;
+    }
+}

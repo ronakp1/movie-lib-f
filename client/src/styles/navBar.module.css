@@ -1,0 +1,318 @@
+.navMenu {
+  width: 100%;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  /* background: rgba(39, 28, 24, 1); */
+  background-color: rgba(46, 64, 87, 1);
+  margin-bottom: 1%;
+}
+
+.navMenu .titleHolder {
+  padding: 0 0 0 7rem;
+}
+.navMenu .title {
+  color: white;
+  /* padding: 0 5rem; */
+  font-size: 2rem;
+  text-decoration: none;
+  /* max-width: 100%; */
+  height: auto;
+  width: 100%;
+}
+
+.navMenu .tmdbLogo {
+  width: 10%;
+}
+.navBar {
+  /* width: 100%; */
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 7rem;
+}
+.dropdown {
+  /* position: relative; */
+  display: inline-block;
+}
+
+.dropbtn {
+  font-size: 1.8rem;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 20px 35px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  cursor: pointer;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.dropdown .dropbtn:hover {
+  background-color: rgb(61, 89, 126);
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  /* background-color: rgba(39, 28, 24, 0.9); */
+  background-color: rgba(46, 64, 87, 0.95);
+  /* box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.2), 6px 6px 10px rgba(0, 0, 0, 0.2); */
+  min-width: 100%;
+  /* height: 252px; */
+  height: 15rem;
+  top: 95%;
+  left: 0;
+  z-index: 1;
+}
+
+.groupContent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  padding: 2rem 27rem;
+}
+
+.discoverContent {
+  flex-direction: column;
+}
+.groupContent .navIcon {
+  width: 12%;
+  margin-right: 0.8rem;
+}
+
+.groupContent .discoverIcons {
+  color: white;
+  filter: invert(1);
+}
+
+.dropdownContent .test1 {
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  width: 14%;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+}
+
+.dropdownContent .test1:hover {
+  /* background-color: rgba(39, 28, 24, 0.9); */
+  /* background-color: rgba(46, 64, 87, 1); */
+  /* text-shadow: 0.5px 0.2px rgba(255, 255, 255, 1); */
+  background-color: rgb(61, 89, 126);
+  border-radius: 1.5rem;
+}
+
+.dropdown:hover .dropdownContent {
+  display: block;
+}
+
+/* .link {
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  color: black;
+}
+
+.link:hover {
+  border: solid 1px grey;
+  border-radius: 1rem;
+} */
+
+.iconHolder {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  /* justify-content: flex-start; */
+  align-items: center;
+  letter-spacing: .08rem;
+}
+
+.navSearch {
+  position: relative;
+  margin-left: auto;
+  padding-right: 10rem;
+}
+.navSearch input {
+  border-radius: 2rem;
+  /* width: 50%; */
+  padding: 1.4rem;
+  font-size: 1.4rem;
+  background-color: rgb(61, 89, 126);
+  color: white;
+  width: 25rem;
+  border-color:white;
+  /* border:none; */
+  border:solid .1rem white;
+  outline:none;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.navSearch input:focus {
+  box-shadow: 0 0 5px rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.navSearch ::placeholder {
+  color: white;
+  font-size: 1.4rem;
+}
+
+.navSearch a {
+  text-decoration: none;
+  font-size: 2rem;
+  width: 10%;
+  color: white;
+}
+
+.searchIcon {
+  width: 100%;
+}
+
+.searchRef {
+  position: absolute;
+
+  top: 20%;
+  right: 32%;
+
+  z-index: 999;
+}
+.inputSearch {
+  color: black;
+}
+
+.toggleButton {
+  position: absolute;
+  top: 1.4rem;
+  /* right: 1rem; */
+  left: 4rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.toggleButton .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .navSearch {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 1070px) {
+  .genreContent {
+    top: 26rem !important;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .navMenu {
+    padding:1rem;
+  }
+  .dropbtn {
+    display: none;
+  }
+
+  .authButtons {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    z-index:999;
+  }
+
+  .toggleButton {
+    padding-top:1rem;
+    display: flex;
+    z-index: 999;
+    left: 6%;
+    top: 30%;
+  }
+
+  .dropdownContent {
+    display: none;
+    min-width: 40%;
+    height: auto;
+  }
+
+  .hamburger {
+    display: flex;
+    min-width: 40%;
+    flex-direction: column;
+    height: auto;
+    width: 40rem;
+  }
+
+  .groupContent {
+    flex-direction: column;
+    /* padding: 7rem 3rem; */
+    padding-top:8rem;
+    padding-left:3rem;
+    padding-right:3rem;
+    padding-bottom:0;
+  }
+
+  .genreHam {
+    padding-top:0rem;
+    padding-left:3rem;
+  }
+
+  .discoverContent {
+    top: 0%;
+    position: absolute;
+    background-color: rgba(46, 64, 87, 0.95);
+  }
+  .genreContent {
+    top: 26.8rem;
+  }
+  .dropdownContent .test1 {
+    width: auto;
+    height: auto;
+    padding-bottom: 2rem;
+  }
+
+  .navSearch {
+    margin-right:0;
+  }
+  /* .dropbtn {
+    display:none;
+   }
+ 
+   .toggleButton {
+     display: flex;
+   }
+ 
+   .dropdownContent {
+     display:flex;
+     min-width:40%;
+   }
+ 
+   .groupContent{
+     flex-direction: column;
+   }
+   .discoverContent {
+     top:0%;
+     position:absolute;
+   }
+   .genreContent {
+     top:209%;
+   }
+   .dropdownContent .test1 {
+   width:auto;
+   } */
+}
