@@ -79,8 +79,8 @@ const getSearch = async (searchQ, pageNumber) => {
         // const response = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&language=en-US&include_adult=false&query=${searchQ}&page=${pageNumber}`)
         // const data = await response.json();
         // console.log("searchinsideRESULTS", data.results);
-        let response = await fetch(`/search/${searchQ}`);
-        if (pageNumber > 1) response = await fetch(`/search/${searchQ}?page=${pageNumber}`);
+        let response = await fetch(`/api/search/${searchQ}`);
+        if (pageNumber > 1) response = await fetch(`/api/search/${searchQ}?page=${pageNumber}`);
         const data = await response.json();
         console.log("server", data);
         return data.results;
@@ -95,7 +95,7 @@ const getMovie = async ({ id }) => {
         // const data = await response.json();
         // console.log("from connect", data);
         // return data;
-        let response = await fetch(`/movie/${id}`);
+        let response = await fetch(`/api/movie/${id}`);
         // console.log("response1", response);
         // response = await fetch(`/movie/${filter}?page=${pageNumber}`);
         const data = await response.json();
@@ -189,7 +189,7 @@ const getGenre = async (id, pageNumber, filter) => {
         // const data = await response.json();
         // console.log("MOVIELIST", data.results);
         // return data.results;
-        let response = await fetch(`/genre/${id}`);
+        let response = await fetch(`/api/genre/${id}`);
         if (pageNumber > 1) response = await fetch(`/genre/${id}?page=${pageNumber}`);
         const data = await response.json();
 
@@ -205,7 +205,7 @@ const getPerson = async ({ id }) => {
         // const response = await fetch(`https://api.themoviedb.org/3/person/${id}?api_key=${API_KEY}&language=en-US`)
         // const data = await response.json();
         // console.log("from connect", data);
-        let response = await fetch(`/person/${id}`);
+        let response = await fetch(`/api/person/${id}`);
         // console.log("response", response);
         // response = await fetch(`/movie/${filter}?page=${pageNumber}`);
         const data = await response.json();
