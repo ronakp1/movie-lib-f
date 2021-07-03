@@ -7,6 +7,8 @@ import { useLocation } from "react-router-dom";
 import styles from '../styles/MovieCard.module.css';
 import GenreFilters from './GenreFilters';
 
+let location = useLocation();
+const hey = location.pathname;
 
 const Output = (props) => {
     // const { movies, loading } = useContext(MovieContext);
