@@ -7,8 +7,6 @@ import { useLocation } from "react-router-dom";
 import styles from '../styles/MovieCard.module.css';
 import GenreFilters from './GenreFilters';
 
-let location = useLocation();
-const hey = location.pathname;
 
 const Output = (props) => {
     // const { movies, loading } = useContext(MovieContext);
@@ -16,6 +14,7 @@ const Output = (props) => {
     const [similar, setSimilar] = useState(['']);
     const [genreTitle, setGenreTitle] = useState('');
     let location = useLocation();
+    const hey = location.pathname;
     // console.log("kanye", props);
     useEffect(() => {
         if (props.length < 2) {
