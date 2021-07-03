@@ -96,8 +96,8 @@ const Output = (props) => {
 
                 </div>
                 {/* {hey.includes('favourites') ? <div className={styles.moviesContainerAlt}> : <div className={styles.moviesContainer}>} */}
-                <div className={ hey.includes('favourites') ? styles.moviesContainerAlt :  styles.moviesContainer}>
-                {/* <div className={styles.moviesContainer}> */}
+                <div className={hey.includes('favourites') ? styles.moviesContainerAlt : styles.moviesContainer}>
+                    {/* <div className={styles.moviesContainer}> */}
                     {currentMovies !== undefined &&
                         currentMovies.map((c, index) => (
                             <MovieCard
@@ -112,7 +112,9 @@ const Output = (props) => {
                     }
 
                 </div>
-                <Pagination />
+                {hey.includes('favourites') ?
+                    null : <Pagination /> 
+                }
             </div>
 
         );

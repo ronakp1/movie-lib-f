@@ -68,7 +68,7 @@ const MovieCard = ({ title, vote_average, poster, id, movieId }) => {
                     </Link>
                     {pathname.includes('favourites') &&
                         <div>
-                            <button className={mStyles.clickables} type="button" onClick={removeFavouriteHandler}> Remove Favourite </button>
+                            <button className={`${mStyles.clickables} ${mStyles.removeFavouriteBtn}`} type="button" onClick={removeFavouriteHandler}> Remove Favourite </button>
                         </div>
                     }
                 </div>

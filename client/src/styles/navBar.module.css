@@ -83,7 +83,7 @@
   flex-direction: column;
 }
 .groupContent .navIcon {
-  width: 12%;
+  width: 8%;
   margin-right: 0.8rem;
 }
 
@@ -241,7 +241,7 @@
     display: flex;
     z-index: 999;
     left: 6%;
-    top: 30%;
+    top: 24%;
   }
 
   .dropdownContent {
@@ -278,7 +278,7 @@
     background-color: rgba(46, 64, 87, 0.95);
   }
   .genreContent {
-    top: 26.8rem;
+    top: 23rem;
   }
   .dropdownContent .test1 {
     width: auto;

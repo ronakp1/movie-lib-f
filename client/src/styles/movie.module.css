@@ -152,12 +152,18 @@
     margin-right: 0.4rem;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .clickables:hover {
     opacity: 0.5;
     color: white;
     background-color: rgb(61, 89, 126, 1);
+}
+
+.removeFavouriteBtn {
+    margin-left: 3rem;
+    cursor: pointer;
 }
 
 .movieInformation .genreButtons {

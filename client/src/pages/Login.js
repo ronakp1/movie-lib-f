@@ -55,7 +55,7 @@ function Login() {
                     <input name="username" placeholder="Username" type="text" onChange={handleChange} />
                     </div>
                     <div>
-                    <label for="password" classname={styles.pwLabel}> Password </label>
+                    <label for="password" className={styles.pwLabel}> Password </label>
                     <input name="password" placeholder="Password" type="password" onChange={handleChange} />
                     </div>
                     {/* {pathname === '/signup' ? <button onClick={handleSubmit}>Sign Up</button>

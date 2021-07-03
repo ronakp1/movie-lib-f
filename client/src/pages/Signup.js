@@ -42,12 +42,12 @@ function Signup() {
                 <h1>Sign Up</h1>
                 {/* <form action="" method="POST"> */}
                 <form onSubmit={handleSubmit} >
-                    <div className={styles.username}>
+                    <div>
                         <label for="username"> Username </label>
                         <input name="username" placeholder="Username" type="text" onChange={handleChange} />
                     </div>
-                    <div className={styles.password}>
-                        <label for="password" classname={styles.pwLabel}> Password </label>
+                    <div>
+                        <label for="password" className={styles.pwLabel}> Password </label>
                         <input name="password" placeholder="Password" type="password" onChange={handleChange} />
                     </div>
                     {/* {pathname === '/signup' ? <button onClick={handleSubmit}>Sign Up</button>

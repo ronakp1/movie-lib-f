@@ -46,7 +46,7 @@ const FavouriteButton = (props) => {
     }
     return (
         <div>
-            <button  className={mStyles.clickables}  type="button" onClick={() => { setFavourite() }}><FaPlayCircle className={mStyles.svgicon} /> {favourited ? 'Remove from Favourites' : 'Add to Favourites'} </button>
+            <button className={`${mStyles.clickables}`} type="button" onClick={() => { setFavourite() }}><FaPlayCircle className={mStyles.svgicon} /> {favourited ? 'Remove from Favourites' : 'Add to Favourites'} </button>
         </div>
     )
 }
