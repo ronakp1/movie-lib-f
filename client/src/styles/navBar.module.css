@@ -229,12 +229,12 @@
     display: none;
   }
 
-  .authButtons {
+  /* .authButtons {
     display:flex;
     flex-direction: row;
     flex-wrap: nowrap;
     z-index:999;
-  }
+  } */
 
   .toggleButton {
     padding-top:1rem;

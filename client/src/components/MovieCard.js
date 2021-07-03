@@ -7,6 +7,7 @@ import { MovieContext } from './services/MovieContext';
 import star from '../svg/star.svg';
 import Empty from '../svg/Empty';
 import { removeFavourite } from './services/FavouriteService';
+import mStyles from '../styles/movie.module.css';
 
 const MovieCard = ({ title, vote_average, poster, id, movieId }) => {
     const [removeFavourite1, setRemoveFavourite1] = useState(false);
@@ -67,7 +68,8 @@ const MovieCard = ({ title, vote_average, poster, id, movieId }) => {
                     </Link>
                     {pathname.includes('favourites') &&
                         <div>
-                            <button type="button" onClick={removeFavouriteHandler}>Remove Favourite</button></div>
+                            <button className={mStyles.clickables} type="button" onClick={removeFavouriteHandler}> Remove Favourite </button>
+                        </div>
                     }
                 </div>
             </React.Fragment>

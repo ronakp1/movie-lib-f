@@ -24,26 +24,37 @@
     font-size:2rem;
 }
 
-.container button {
+.container .submit {
     text-align: center;
     padding:1rem;
-}
-
-.container button:focus {
     border-radius: 2rem;
     /* width: 50%; */
     padding: 1.4rem;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     background-color: rgb(61, 89, 126);
     color: white;
-    width: 25rem;
+    width: 27rem;
     border-color:white;
     /* border:none; */
     border:solid .1rem white;
     outline:none;
     font-weight: bold;
     text-transform: capitalize;
-  }
+    cursor: pointer;
+    margin-top:1rem;
+}
+
+.container input {
+    height:3rem;
+}
+
+.container .pwLabel {
+    margin-right: 0.4rem;
+}
+
+/* .container .submit:focus {
+
+  } */
 
 .message {
     font-size:2rem;

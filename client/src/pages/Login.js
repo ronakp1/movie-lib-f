@@ -50,18 +50,18 @@ function Login() {
                 <h1>LOG IN</h1>
                 {/* <form action="" method="POST"> */}
                 <form onSubmit={handleSubmit} >
-                    <div className={styles.username}>
+                    <div>
                     <label for="username"> Username </label>
-                    <input name="username" placeholder="username" type="text" onChange={handleChange} />
+                    <input name="username" placeholder="Username" type="text" onChange={handleChange} />
                     </div>
-                    <div className={styles.password}>
-                    <label for="password"> Password </label>
-                    <input name="password" type="password" onChange={handleChange} />
+                    <div>
+                    <label for="password" classname={styles.pwLabel}> Password </label>
+                    <input name="password" placeholder="Password" type="password" onChange={handleChange} />
                     </div>
                     {/* {pathname === '/signup' ? <button onClick={handleSubmit}>Sign Up</button>
                     : <button onClick={handleSubmit}>Log in</button>
                 } */}
-                    <button onClick={handleSubmit}> Login </button>
+                    <button className={styles.submit} onClick={handleSubmit}> Login </button>
                     {message ? <div className={styles.message}>{message}</div> : null}
 
                 </form>

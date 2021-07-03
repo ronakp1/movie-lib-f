@@ -1,6 +1,8 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { addFavourite, checkFavourite, removeFavourite } from './services/FavouriteService';
 import styles from '../styles/movie.module.css';
+import { FaPlayCircle } from 'react-icons/fa';
+import mStyles from '../styles/movie.module.css';
 
 const FavouriteButton = (props) => {
     const [favourited, setFavourited] = useState(false);
@@ -44,7 +46,7 @@ const FavouriteButton = (props) => {
     }
     return (
         <div>
-            <button  className={styles.clickables}  type="button" onClick={() => { setFavourite() }}> {favourited ? 'Remove from Favourites' : 'Add to Favourites'} </button>
+            <button  className={mStyles.clickables}  type="button" onClick={() => { setFavourite() }}><FaPlayCircle className={mStyles.svgicon} /> {favourited ? 'Remove from Favourites' : 'Add to Favourites'} </button>
         </div>
     )
 }
