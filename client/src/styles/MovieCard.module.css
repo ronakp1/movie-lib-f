@@ -81,6 +81,15 @@
     padding: 2rem 10rem;
 }
 
+.moviesContainerAlt {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 20rem));
+    justify-content: flex-start;
+    grid-gap: 4rem 3rem;
+    padding: 2rem 10rem;
+}
+
 .movieInfo {
     /* height: 40px; */
     /* height:100%; */

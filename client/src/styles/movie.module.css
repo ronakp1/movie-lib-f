@@ -130,7 +130,7 @@
     /*width: 50%;*/
 }
 
-.movieInformation .clickables {
+.clickables {
     padding: 10px;
     font-size: 1.6rem;
     /* background-color: rgba(0, 0, 0, 0.9); */
@@ -154,7 +154,7 @@
     align-items: center;
 }
 
-.movieInformation .clickables:hover {
+.clickables:hover {
     opacity: 0.5;
     color: white;
     background-color: rgb(61, 89, 126, 1);
