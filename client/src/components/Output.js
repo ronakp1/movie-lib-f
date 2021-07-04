@@ -14,15 +14,15 @@ const Output = (props) => {
     const [similar, setSimilar] = useState(['']);
     const [genreTitle, setGenreTitle] = useState('');
     let location = useLocation();
-    const hey = location.pathname;
+    const path = location.pathname;
     // console.log("kanye", props);
     useEffect(() => {
         if (props.length < 2) {
             return;
         }
-        const hey = location.pathname;
+        const path = location.pathname;
         // console.log("kanye", props);
-        if ((hey.includes("person"))) {
+        if ((path.includes("person"))) {
 
             setSimilar("person");
             if (props.personCredits !== undefined) {
@@ -32,7 +32,7 @@ const Output = (props) => {
             }
         }
 
-        if ((hey.includes("search"))) {
+        if ((path.includes("search"))) {
             setSimilar("search");
 
             setCurrentMovies(props.searchList);
@@ -42,7 +42,7 @@ const Output = (props) => {
             document.title = genreTitle;
         }
 
-        if ((hey.includes("genre"))) {
+        if ((path.includes("genre"))) {
 
             setSimilar("genre");
             const enterString = location.pathname;
@@ -51,7 +51,7 @@ const Output = (props) => {
             document.title = genreTitle;
             setCurrentMovies(props.genreList);
         }
-        if ((hey.includes("movie"))) {
+        if ((path.includes("movie"))) {
             setSimilar("movie");
 
 
@@ -60,12 +60,12 @@ const Output = (props) => {
             }
 
         }
-        if (hey.includes("discover")) {
+        if (path.includes("discover")) {
             setSimilar("discover");
             setCurrentMovies(props.discoverList);
 
         }
-        if (hey.includes("favourites")) {
+        if (path.includes("favourites")) {
             setSimilar("favourites");
             if (props.favouriteMovies !== undefined) {
                 setCurrentMovies(props.favouriteMovies.favourites);
@@ -96,7 +96,7 @@ const Output = (props) => {
 
                 </div>
                 {/* {hey.includes('favourites') ? <div className={styles.moviesContainerAlt}> : <div className={styles.moviesContainer}>} */}
-                <div className={hey.includes('favourites') ? styles.moviesContainerAlt : styles.moviesContainer}>
+                <div className={path.includes('favourites') ? styles.moviesContainerAlt : styles.moviesContainer}>
                     {/* <div className={styles.moviesContainer}> */}
                     {currentMovies !== undefined &&
                         currentMovies.map((c, index) => (
@@ -112,7 +112,7 @@ const Output = (props) => {
                     }
 
                 </div>
-                {hey.includes('favourites') ?
+                {path.includes('favourites') ?
                     null : <Pagination /> 
                 }
             </div>

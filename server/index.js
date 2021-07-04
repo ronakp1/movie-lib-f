@@ -36,17 +36,12 @@ const movieController = require('./Controllers/MovieController');
 const searchController = require('./Controllers/SearchController');
 const personController = require('./Controllers/PersonController');
 const genreController = require('./Controllers/GenreController');
-// const favouriteController = require('./Controllers/FavouriteController');
-
-const { response } = require('express');
-
 
 app.get(['/api/discover/:id', '/api/discover/:id?page=pageNumb'], discoverController.getDiscover);
 app.get(['/api/movie/:id', '/api/movie/:id?page=pageNumber'], movieController.getMovie);
 app.get(['/api/search/:id', '/api/search/:id?page=pageNumber'], searchController.getSearch);
 app.get(['/api/person/:id', '/api/person/:id?page=pageNumber'], personController.getPerson);
 app.get(['/api/genre/:id', '/api/genre/:id?page=pageNumb'], genreController.getGenre);
-// app.post('/api/favourite/movie', favouriteController.getFavourite);
 
 app.use(authRoutes);
 app.use(favouriteRoutes);

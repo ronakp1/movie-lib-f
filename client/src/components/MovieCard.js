@@ -13,16 +13,13 @@ const MovieCard = ({ title, vote_average, poster, id, movieId }) => {
     const [removeFavourite1, setRemoveFavourite1] = useState(false);
     const { pathname } = useLocation();
     const URL = `https://image.tmdb.org/t/p/w300`;
-    // console.log("jay", movieId);
     const starAverage = Math.round(vote_average / 2);
 
     const removeFavouriteHandler = async () => {
-        // console.log(movieId);
         const data = {
             movieId: movieId
         }
         const res = await removeFavourite(data);
-        // console.log("removed", res);
         setRemoveFavourite1(true);
         window.location.reload(false);
     }
