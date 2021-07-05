@@ -1,3 +1,15 @@
+Movie Library Web App -  Built using: React, Node(Express), MongoDB.
+
+Features:
+
+-User Authentication via JWT. Features multiple user profiles(login/logout features)
+-Movie details page(includes similar movies, cast & general movie details)
+-Casts page
+-Search/Pagination functionality
+-Favourites list(stored in MongoDB)
+-Comments
+-Link available here: https://hidden-river-05832.herokuapp.com/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
